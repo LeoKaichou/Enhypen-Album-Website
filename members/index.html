@@ -1,0 +1,85 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <audio id="bgMusic" autoplay loop>
+  <source src="../Audio/ENHYPEN - Bite Me (Official Instrumental).mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const audio = document.getElementById("bgMusic");
+
+  
+audio.volume = 0.2;
+ 
+audio.addEventListener("loadedmetadata", () => {
+  audio.currentTime = 15;  
+});
+</script>
+    </head>
+    <body>
+     
+    <div class="container">
+
+        <div class="slide">
+
+            
+            <div class="item" style="background-image: url(../imgs/Members/Heeseung2.jpg);">
+                <div class="content">
+                    <div class="name">Heeseung</div>
+                    <div class="des">An all-rounder recognized for his strong vocals and smooth performance style. Heeseung brings a natural confidence to the stage, 
+                        often giving off a relaxed but captivating presence.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(../imgs/Members/Sunghoon2.jpg);">
+                <div class="content">
+                    <div class="name">Sunghoon</div>
+                    <div class="des">Often described as elegant and refined, Sunghoon carries a composed and graceful image. His background in figure skating reflects in his smooth and controlled movements.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(../imgs/Members/Jungwoon2.jpg);">
+                <div class="content">
+                    <div class="name">Jungwon</div>
+                    <div class="des">The leader who carries a calm and composed presence, but with a subtle playful side. 
+                        Known for his sharp expressions and steady vocals, he balances responsibility with a quiet charm that stands out on stage.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(../imgs/Members/Jake.jpg);">
+                <div class="content">
+                    <div class="name">Jake</div>
+                    <div class="des">Warm and approachable, Jake has a naturally friendly aura that connects easily with fans. His bright expressions and steady growth as a performer make him stand out.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(../imgs/Members/Sunoo.jpg);">
+                <div class="content">
+                    <div class="name">Sunoo</div>
+                    <div class="des">Known for his expressive performances and lively personality, Sunoo brings a bright energy both on and off stage. His ability to convey emotion makes him especially engaging to watch.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(../imgs/Members/Jay.jpg);">
+                <div class="content">
+                    <div class="name">Jay</div>
+                    <div class="des">Charismatic and expressive, Jay is known for his bold personality and strong stage presence. Off stage, his witty and humorous nature adds a different layer to his image.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(../imgs/Members/Ni-ki.jpg);">
+                <div class="content">
+                    <div class="name">Ni-Ki</div>
+                    <div class="des">The youngest member with a strong and dynamic dance style. Ni-ki contrasts a playful off-stage personality with a powerful and focused presence during performances.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+    <script src="action.js"></script>
+    </body>
+    </html>

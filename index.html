@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <audio id="bgMusic" autoplay loop>
+  <source src="Audio/ENHYPEN - Bite Me (Official Instrumental).mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const audio = document.getElementById("bgMusic");
+
+  
+audio.volume = 0.2;
+ 
+audio.addEventListener("loadedmetadata", () => {
+  audio.currentTime = 15;  
+});
+</script>
+</head>
+<body>
+    
+    <div class="hero">
+        <nav>
+            <img src="imgs/logo.png" class="logo">
+            <ul>
+                <li><a href="gallery/index.html">Gallery</a></li>
+                <li><a href="album/index.html">Song List</a></li>
+            <!--    <li><a href="#">About</a></li>-->
+            </ul>
+            <div>
+                <a href="members/index.html" class="btn2">Members</a>
+            </div>
+        </nav>
+        <div class="content">
+            <h1 class="anim"><br>Dark Blood</h1>
+            <p class="anim">I BELIEVED I COULD PROTECT YOU IF I HAD THE POWER</p>
+          <!--  <a href="#" class="btn2 anim">Join Now</a> -->
+        </div>
+        <img src="" class="feature-img">
+    </div>
+</body>
+</html>
